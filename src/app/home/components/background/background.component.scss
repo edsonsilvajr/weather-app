@@ -12,7 +12,7 @@
 
 .bg-sky {
   z-index: 0;
-  animation: 4s linear example-2;
+  //animation: 4s linear example-2;
 }
 
 .sun {
@@ -37,22 +37,22 @@
 
 .mountains {
   z-index: 2;
-  animation: 4s example-3;
+  // animation: 4s example-3;
 }
 
 .bg-far {
   z-index: 3;
-  animation: 4s example-3;
+  // animation: 4s example-3;
 }
 
 .bg-medium {
   z-index: 4;
-  animation: 4s example-3;
+  // animation: 4s example-3;
 }
 
 .bg-close {
   z-index: 5;
-  animation: 4s linear example-4;
+  // animation: 4s linear example-4;
 }
 
 @keyframes example-2 {
