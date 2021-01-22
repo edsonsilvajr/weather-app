@@ -12,7 +12,7 @@
 
 .bg-sky {
   z-index: 0;
-  //animation: 4s linear example-2;
+  animation: 4s linear example-2;
 }
 
 .sun {
@@ -22,7 +22,9 @@
   height: 400px;
   left: 75px;
   top: 50px;
-  transform: scale(0.8);
+  transform: scale(0.7);
+  left: 10%;
+  top: 5%;
 }
 
 .moon {
@@ -30,29 +32,33 @@
   animation: 4s linear example;
   width: 400px;
   height: 400px;
-  right: 75px;
-  top: 50px;
-  transform: scale(0.8);
+  transform: scale(0.7);
+  right: 10%;
+  top: 5%;
 }
 
 .mountains {
   z-index: 2;
-  // animation: 4s example-3;
+  animation: 4s example-3;
 }
 
 .bg-far {
   z-index: 3;
-  // animation: 4s example-3;
+  animation: 4s example-3;
 }
 
 .bg-medium {
   z-index: 4;
-  // animation: 4s example-3;
+  animation: 4s example-3;
 }
 
 .bg-close {
   z-index: 5;
-  // animation: 4s linear example-4;
+  animation: 4s linear example-4;
+}
+
+.stars {
+  z-index: 0;
 }
 
 @keyframes example-2 {
@@ -69,13 +75,13 @@
 
 @keyframes example {
   0% {
-    transform: translateY(1000px) scale(0.8);
+    transform: translateY(1000px) scale(0.7);
   }
   95% {
-    transform: translateY(-20px) scale(0.8);
+    transform: translateY(-20px) scale(0.7);
   }
   100% {
-    transform: translateY(0px) scale(0.8);
+    transform: translateY(0px) scale(0.7);
   }
 }
 
