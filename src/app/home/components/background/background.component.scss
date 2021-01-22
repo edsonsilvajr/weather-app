@@ -12,7 +12,7 @@
 
 .bg-sky {
   z-index: 0;
-  animation: 4s linear example-2;
+  // animation: 4s linear example-2;
 }
 
 .sun {
@@ -39,22 +39,22 @@
 
 .mountains {
   z-index: 2;
-  animation: 4s example-3;
+  // animation: 4s example-3;
 }
 
 .bg-far {
   z-index: 3;
-  animation: 4s example-3;
+  // animation: 4s example-3;
 }
 
 .bg-medium {
   z-index: 4;
-  animation: 4s example-3;
+  // animation: 4s example-3;
 }
 
 .bg-close {
   z-index: 5;
-  animation: 4s linear example-4;
+  // animation: 4s linear example-4;
 }
 
 .stars {
@@ -82,6 +82,20 @@
   }
   100% {
     transform: translateY(0px) scale(0.7);
+  }
+}
+
+.silhouette {
+  filter: brightness(0);
+  animation: 4s linear example-5 forwards;
+}
+
+@keyframes example-5 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
