@@ -1,4 +1,4 @@
-<div class="background-container" *ngIf="darkMode">
+<div class="background-container" *ngIf="!darkMode">
   <img class="image bg-sky" src="assets/day/Dia-ceu.png" alt="anything" />
   <img
     class="image bg-far"
@@ -23,7 +23,7 @@
   <img class="image sun" src="assets/day/Dia-sol.png" alt="anything" />
 </div>
 
-<div class="background-container" *ngIf="!darkMode">
+<div class="background-container" *ngIf="darkMode">
   <img class="image bg-sky" src="assets/night/Noite-sky.png" alt="anything" />
   <img
     class="image bg-far"
@@ -45,6 +45,6 @@
     src="assets/night/Noite-montanhas.png"
     alt="anything"
   />
-  <img class="image sun" src="assets/night/Noite-lua.png" alt="anything" />
+  <img class="image moon" src="assets/night/Noite-lua.png" alt="anything" />
   <img class="image" src="assets/night/Noite-estrelas.png" alt="anything" />
 </div>

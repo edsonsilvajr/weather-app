@@ -18,6 +18,21 @@
 .sun {
   z-index: 1;
   animation: 4s linear example;
+  width: 400px;
+  height: 400px;
+  left: 75px;
+  top: 50px;
+  transform: scale(0.8);
+}
+
+.moon {
+  z-index: 1;
+  animation: 4s linear example;
+  width: 400px;
+  height: 400px;
+  right: 75px;
+  top: 50px;
+  transform: scale(0.8);
 }
 
 .mountains {
@@ -54,13 +69,13 @@
 
 @keyframes example {
   0% {
-    transform: translateY(1000px);
+    transform: translateY(1000px) scale(0.8);
   }
   95% {
-    transform: translateY(-20px);
+    transform: translateY(-20px) scale(0.8);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(0px) scale(0.8);
   }
 }
 
