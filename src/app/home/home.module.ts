@@ -7,11 +7,12 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
 import { WeatherCardComponent } from './components/weather-card/weather-card.component';
 import { WeatherService } from './services/weather/weather.service';
+import { LoadingIconComponent } from './components/loading-icon/loading-icon.component';
 
 const routes: Routes = [{ path: '', component: HomeComponent }];
 
 @NgModule({
-  declarations: [HomeComponent, BackgroundComponent, WeatherCardComponent],
+  declarations: [HomeComponent, BackgroundComponent, WeatherCardComponent, LoadingIconComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),

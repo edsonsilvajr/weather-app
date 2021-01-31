@@ -1,4 +1,6 @@
 <div class="card-container">
-  {{ teste }}
-  <div>{{ teste }}</div>
+  <app-loading-icon *ngIf="loading"></app-loading-icon>
+  <ng-container *ngIf="!loading && cidadeTeste">
+    {{ cidadeTeste.name }}
+  </ng-container>
 </div>

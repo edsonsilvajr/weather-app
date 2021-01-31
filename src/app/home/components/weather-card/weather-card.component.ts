@@ -11,14 +11,19 @@ export class WeatherCardComponent implements OnInit {
   constructor(private _weatherService: WeatherService) {}
 
   public teste: string;
+  public loading: boolean;
   public cidadeTeste: City;
 
   ngOnInit(): void {
     this.teste = this._weatherService.teste();
-    this._weatherService.getTeste().subscribe((res: City) => {
-      this.cidadeTeste = res;
-      console.log(res);
-      console.log(this.cidadeTeste, 'daqui?');
-    });
+    this.loading = true;
+    this._weatherService
+      .getTeste()
+      .subscribe((res: City) => {
+        this.cidadeTeste = res;
+      })
+      .add(() => {
+        this.loading = false;
+      });
   }
 }
