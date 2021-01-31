@@ -23,7 +23,9 @@ export class WeatherCardComponent implements OnInit {
         this.cidadeTeste = res;
       })
       .add(() => {
-        this.loading = false;
+        setTimeout(() => {
+          this.loading = false;
+        }, 2500);
       });
   }
 }

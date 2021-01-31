@@ -1,7 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700,300);
+
+* {
+  font-family: "Comfortaa", cursive;
+}
 .card-container {
   box-shadow: 5px 5px 15px 5px #000000;
   padding: 16px;
   background-color: #ab43e757;
   border-radius: 5px;
   color: white;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+}
+
+.center {
+  margin: auto;
 }
