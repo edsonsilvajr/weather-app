@@ -5,12 +5,14 @@
 }
 .card-container {
   box-shadow: 5px 5px 15px 5px #000000;
-  padding: 16px;
+  padding: 32px;
   background-color: #ab43e757;
   border-radius: 5px;
   color: white;
-  width: 50vw;
-  height: 50vh;
+  width: fit-content;
+  height: fit-content;
+  max-width: 50vw;
+  max-height: 50vh;
   display: flex;
   flex-direction: column;
   user-select: none;
@@ -20,28 +22,32 @@
   margin: auto;
 }
 
-.fa-spin {
-  animation: 0.5s fa-spin ease-in-out;
-}
-
 .fade-out {
   animation: 0.5s ease-out fade-out forwards;
 }
 
+.refresh-button {
+  cursor: pointer;
+  font-size: xx-large;
+  i {
+    font-family: "Font Awesome 5 Free";
+  }
+  .fa-spin {
+    animation: 0.5s fa-spin ease-in-out;
+  }
+  .fas {
+    line-height: unset;
+  }
+}
+
 .card-info {
   animation: 0.5s ease-in fade-in forwards;
+  text-align: center;
   .header {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    i {
-      font-family: "Font Awesome 5 Free";
-    }
-    .refresh-button {
-      cursor: pointer;
-      font-size: xx-large;
-    }
   }
 }
 
