@@ -19,3 +19,46 @@
 .center {
   margin: auto;
 }
+
+.fa-spin {
+  animation: 0.5s fa-spin ease-in-out;
+}
+
+.fade-out {
+  animation: 0.5s ease-out fade-out forwards;
+}
+
+.card-info {
+  animation: 0.5s ease-in fade-in forwards;
+  .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    i {
+      font-family: "Font Awesome 5 Free";
+    }
+    .refresh-button {
+      cursor: pointer;
+      font-size: xx-large;
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

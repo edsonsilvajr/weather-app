@@ -1,9 +1,22 @@
 <div class="card-container">
-  <app-loading-icon class="center" *ngIf="loading"></app-loading-icon>
-  <div *ngIf="!loading && cidadeTeste">
-    <h1>
-      {{ cidadeTeste.name }}
-    </h1>
+  <app-loading-icon
+    class="center"
+    [ngClass]="{ 'fade-out': fadeOut }"
+    *ngIf="loading"
+  ></app-loading-icon>
+  <div class="card-info" *ngIf="!loading && cidadeTeste">
+    <div class="header">
+      <h1>{{ cidadeTeste.name }}</h1>
+      <div class="refresh-button">
+        <i
+          class="fas fa-redo"
+          [ngClass]="{ 'fa-spin': hover }"
+          (click)="refresh(); hover = false"
+          (mouseenter)="hover = true"
+          (mouseleave)="hover = false"
+        ></i>
+      </div>
+    </div>
     <p>Temperatura Atual: {{ toCelsius(cidadeTeste.main.temp) }}º</p>
     <p>Sensação Térmica: {{ toCelsius(cidadeTeste.main.feels_like) }}º</p>
     <p>Umidade do ar: {{ cidadeTeste.main.humidity }}%</p>

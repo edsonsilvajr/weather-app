@@ -1,4 +1,4 @@
-<ng-container *ngIf="!darkMode">
+<ng-container *ngIf="darkMode">
   <img class="image bg-sky" src="assets/day/Dia-ceu.png" alt="anything" />
   <img
     class="image bg-far"
@@ -24,7 +24,7 @@
   <img class="image sun" src="assets/day/Dia-sol.png" alt="anything" />
 </ng-container>
 
-<ng-container *ngIf="darkMode">
+<ng-container *ngIf="!darkMode">
   <img class="image bg-sky" src="assets/night/Noite-sky.png" alt="anything" />
   <img
     class="image bg-far"

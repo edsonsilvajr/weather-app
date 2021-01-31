@@ -13,10 +13,21 @@ export class WeatherCardComponent implements OnInit {
   public teste: string;
   public loading: boolean;
   public cidadeTeste: City;
+  public fadeOut: boolean;
+  public hover = false;
 
   ngOnInit(): void {
     this.teste = this._weatherService.teste();
+    this.refresh();
+  }
+
+  toCelsius(temp: number): number {
+    return Math.round(temp - 273.15);
+  }
+
+  public refresh() {
     this.loading = true;
+    this.fadeOut = false;
     this._weatherService
       .getTeste()
       .subscribe((res: City) => {
@@ -25,12 +36,11 @@ export class WeatherCardComponent implements OnInit {
       })
       .add(() => {
         setTimeout(() => {
+          this.fadeOut = true;
+        }, 2000);
+        setTimeout(() => {
           this.loading = false;
         }, 2500);
       });
-  }
-
-  toCelsius(temp: number): number {
-    return Math.round(temp - 273.15);
   }
 }
