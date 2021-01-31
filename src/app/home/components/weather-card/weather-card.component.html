@@ -4,6 +4,8 @@
     <h1>
       {{ cidadeTeste.name }}
     </h1>
-    <p>{{ cidadeTeste.main.temp }}</p>
+    <p>Temperatura Atual: {{ toCelsius(cidadeTeste.main.temp) }}º</p>
+    <p>Sensação Térmica: {{ toCelsius(cidadeTeste.main.feels_like) }}º</p>
+    <p>Umidade do ar: {{ cidadeTeste.main.humidity }}%</p>
   </div>
 </div>

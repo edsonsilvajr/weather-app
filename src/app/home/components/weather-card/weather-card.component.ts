@@ -29,4 +29,8 @@ export class WeatherCardComponent implements OnInit {
         }, 2500);
       });
   }
+
+  toCelsius(temp: number): number {
+    return Math.round(temp - 273.15);
+  }
 }
