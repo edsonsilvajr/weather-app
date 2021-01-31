@@ -21,6 +21,7 @@ export class WeatherCardComponent implements OnInit {
       .getTeste()
       .subscribe((res: City) => {
         this.cidadeTeste = res;
+        console.log(this.cidadeTeste);
       })
       .add(() => {
         setTimeout(() => {

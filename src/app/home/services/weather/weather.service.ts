@@ -21,7 +21,12 @@ export class WeatherService {
       )
       .pipe(
         map((res: City) => {
-          return { name: res.name, id: res.id };
+          return {
+            name: res.name,
+            id: res.id,
+            main: res.main,
+            weather: res.weather,
+          };
         })
       );
   }
