@@ -1,4 +1,19 @@
+.header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .teste {
-  position: fixed;
-  z-index: 10;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+}
+
+.weather-card-container {
+  position: absolute;
+  z-index: 90;
+  top: 50%;
+  left: 50%;
 }

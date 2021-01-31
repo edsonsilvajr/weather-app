@@ -1,2 +1,7 @@
-<mat-slide-toggle class="teste" [(ngModel)]="darkMode"></mat-slide-toggle>
-<app-background [darkMode]="darkMode"></app-background>
+<div class="header">
+  <mat-slide-toggle class="teste" [(ngModel)]="darkMode"></mat-slide-toggle>
+  <app-background [darkMode]="darkMode"></app-background>
+  <div class="weather-card-container">
+    <app-weather-card></app-weather-card>
+  </div>
+</div>

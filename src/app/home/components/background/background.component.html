@@ -1,17 +1,7 @@
-<div class="background-container" *ngIf="!darkMode">
+<ng-container *ngIf="!darkMode">
   <img class="image bg-sky" src="assets/day/Dia-ceu.png" alt="anything" />
   <img
-    class="image bg-sky silhouette"
-    src="assets/day/Dia-ceu.png"
-    alt="anything"
-  />
-  <img
     class="image bg-far"
-    src="assets/day/Dia-fundoDistante.png"
-    alt="anything"
-  />
-  <img
-    class="image bg-far silhouette"
     src="assets/day/Dia-fundoDistante.png"
     alt="anything"
   />
@@ -21,17 +11,7 @@
     alt="anything"
   />
   <img
-    class="image bg-close silhouette"
-    src="assets/day/Dia-fundoProximo.png"
-    alt="anything"
-  />
-  <img
     class="image bg-medium"
-    src="assets/day/Dia-fundoMedio.png"
-    alt="anything"
-  />
-  <img
-    class="image bg-medium silhouette"
     src="assets/day/Dia-fundoMedio.png"
     alt="anything"
   />
@@ -40,15 +20,10 @@
     src="assets/day/Dia-montanhas.png"
     alt="anything"
   />
-  <img
-    class="image mountains silhouette"
-    src="assets/day/Dia-montanhas.png"
-    alt="anything"
-  />
   <img class="image sun" src="assets/day/Dia-sol.png" alt="anything" />
-</div>
+</ng-container>
 
-<div class="background-container" *ngIf="darkMode">
+<ng-container *ngIf="darkMode">
   <img class="image bg-sky" src="assets/night/Noite-sky.png" alt="anything" />
   <img
     class="image bg-far"
@@ -76,4 +51,4 @@
     src="assets/night/Noite-estrelas.png"
     alt="anything"
   />
-</div>
+</ng-container>
